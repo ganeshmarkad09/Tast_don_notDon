@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: left;
+  color: #444;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #007bff;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Add Task Styles */
+.add-task-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.input-group button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background-color: #0056b3;
+}
+
+.task-preview {
+  margin-top: 2rem;
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.task-preview ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-preview li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Task Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem auto;
+  max-width: 800px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+button {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group input {
+    margin-bottom: 10px;
+  }
+}
+button {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.remove-button {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+button.remove-button:hover {
+  background-color: #d9363e;
+}
+
+/* Task Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem auto;
+  max-width: 800px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+.completed{
+  color: green;
+  padding:  0 5px;
+}
+.incomplete{
+  color: red;
+  padding:  0 5px;
+}
